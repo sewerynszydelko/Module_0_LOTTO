@@ -18,3 +18,7 @@ def test_cost_and_years_to_win():
     info = cost_and_years_to_win(count_trys=count_trys_temporaly)
 
     assert type(info) is str
+
+def test_get_random_6_nums():
+    get_6_numbers = get_random_6_nums()
+    assert len(get_6_numbers) == 6
