@@ -32,6 +32,12 @@ def cost_and_years_to_win(count_trys) -> str:
 
     return final_info
 
+def about_game():
+    print("Hello Welcom in Lotto Simulation!\n")
+    print("I will ask you for 6 uniqe nums from 1 to 49")
+    print("Then i will tell you how many years it took and cost")
+    print("I'll asume 1 game cost 3 zł and you play once in week, and year have 52 weeks")
+
 def game():
     count_trys = 0
     user_choice = get_user_num()
@@ -54,4 +60,5 @@ def game():
 
 
 if __name__ == "__main__":
+    about_game()
     game()
