@@ -1,3 +1,4 @@
+from math import radians
 import sys
 import os
 sys.path.append(os.path.abspath(
@@ -29,3 +30,9 @@ def test_get_random_6_nums_200_times():
         get_6_nums = get_random_6_nums()
         result = len(get_6_nums)
         assert result == 6
+
+def test_get_random_6_nums_betwin_1_49():
+    random_6 = get_random_6_nums()
+
+    for num in random_6:
+        assert num <= 49 and num >= 1
