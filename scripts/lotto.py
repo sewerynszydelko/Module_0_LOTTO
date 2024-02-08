@@ -12,7 +12,10 @@ def get_random_6_nums() -> set:
     Returns:
         set: give set of numbers in range 6
     """
-    return set(random.randint(1, 49) for i in range(6))
+    random_nums = {}
+    while len(random_nums) != 6:
+        random_nums = set(random.choices(range(1,50), k=6))
+    return random_nums
 
 
 def get_user_num() -> set:

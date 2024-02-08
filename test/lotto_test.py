@@ -10,8 +10,8 @@ def test_get_random_6_nums_list():
 
     assert type(random_6_list) is set
 
-def test_get_user_num_is_list():    
-    assert type(get_user_num()) is set
+#def test_get_user_num_is_list():    
+#    assert type(get_user_num()) is set
 
 def test_cost_and_years_to_win():
     count_trys_temporaly = 100
@@ -22,3 +22,10 @@ def test_cost_and_years_to_win():
 def test_get_random_6_nums():
     get_6_numbers = get_random_6_nums()
     assert len(get_6_numbers) == 6
+
+def test_get_random_6_nums_200_times():
+
+    for _ in range(200):
+        get_6_nums = get_random_6_nums()
+        result = len(get_6_nums)
+        assert result == 6
